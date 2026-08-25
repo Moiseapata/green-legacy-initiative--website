@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Green Legacy Initiative — Forêts vivantes en Côte d’Ivoire</title>
+    <meta name="description" content="Green Legacy Initiative relie écoles, communautés et partenaires pour restaurer les forêts et mangroves en Côte d’Ivoire." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Green Legacy Initiative — Forêts vivantes en Côte d’Ivoire" />
+    <meta property="og:description" content="Un engagement local, une portée internationale : restaurer les forêts avec les communautés." />
+    <meta property="og:image" content="/images/gle-solibra-mondoukro.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Green Legacy Initiative — Forêts vivantes en Côte d’Ivoire" />
+    <meta name="twitter:description" content="Un engagement local, une portée internationale : restaurer les forêts avec les communautés." />
+    <meta name="twitter:image" content="/images/gle-solibra-mondoukro.jpg" />
+    <link rel="canonical" href="/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Green Legacy Initiative",
+        "description": "Organisation environnementale basée à Genève et active en Côte d’Ivoire.",
+        "email": "bonjour@greenlegacy.ci",
+        "areaServed": "Côte d’Ivoire"
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!--
+      Formulaires statiques masqués, uniquement pour la détection Netlify Forms
+      au moment du build (https://docs.netlify.com/forms/setup/#html-forms).
+      Ce ne sont pas ceux affichés à l'utilisateur : les vrais formulaires React
+      dans src/App.tsx postent en fetch() vers "/" avec le même `form-name`.
+    -->
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+    <form name="volunteer" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="location" />
+      <input type="text" name="availability" />
+      <textarea name="message"></textarea>
+    </form>
+    <form name="newsletter" data-netlify="true" hidden>
+      <input type="email" name="email" />
+    </form>
+  </body>
+</html>
