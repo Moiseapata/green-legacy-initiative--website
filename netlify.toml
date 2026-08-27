@@ -1,9 +1,9 @@
 [build]
-  command = "npm run build"
-  publish = "dist/public"
+  command = "PORT=4173 BASE_PATH=/ pnpm --filter @workspace/green-legacy-initiative run build"
+  publish = "artifacts/green-legacy-initiative/dist/public"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "24"
 
 [[redirects]]
   from = "/*"

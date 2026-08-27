@@ -33,28 +33,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-
-    <!--
-      Formulaires statiques masqués, uniquement pour la détection Netlify Forms
-      au moment du build (https://docs.netlify.com/forms/setup/#html-forms).
-      Ce ne sont pas ceux affichés à l'utilisateur : les vrais formulaires React
-      dans src/App.tsx postent en fetch() vers "/" avec le même `form-name`.
-    -->
-    <form name="contact" data-netlify="true" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="text" name="subject" />
-      <textarea name="message"></textarea>
-    </form>
-    <form name="volunteer" data-netlify="true" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="text" name="location" />
-      <input type="text" name="availability" />
-      <textarea name="message"></textarea>
-    </form>
-    <form name="newsletter" data-netlify="true" hidden>
-      <input type="email" name="email" />
-    </form>
   </body>
 </html>
